@@ -16,5 +16,4 @@ def main():
 	if "now connected" in resp: print("[*] TOS accepted successfully! Internet should work now :)")
 	else: print("[!] Failed to accept TOS. Does Internet work?")
 
-
 main()
