@@ -1,4 +1,5 @@
 import requests
+import time
 
 def accept_tos():
 	data = {
@@ -17,7 +18,11 @@ def repeater():
 	else: print("[!] Failed to accept TOS. Does Internet work?")
 		
 def main():
-	repeater()
+	while True:
+		repeater()
+		
+		# sleep 4h lol :)
+		time.sleep(14400)
 	
 
 main()
