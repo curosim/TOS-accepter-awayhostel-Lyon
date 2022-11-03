@@ -9,11 +9,15 @@ def accept_tos():
 	response = requests.post('http://198.18.34.1/reg.php', data=data)
 	return response.text
 
-def main():
+def repeater():
 	print("[*] Trying to accept TOS and establishing Internet connection...")
 	resp = accept_tos()
 
 	if "now connected" in resp: print("[*] TOS accepted successfully! Internet should work now :)")
 	else: print("[!] Failed to accept TOS. Does Internet work?")
+		
+def main():
+	repeater()
+	
 
 main()
